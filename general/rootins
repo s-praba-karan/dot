@@ -1,0 +1,63 @@
+#!/bin/bash
+
+pacman -S bspwm \
+  dunst \
+  sxhkd \
+  rofi \
+  alacritty \
+  kitty \
+  neofetch \
+  feh \
+  stow \
+  okular \
+  xdo \
+  xorg-xinit \
+  xorg python-pip \
+  ttf-sarasa-gothic \
+  libnotify \
+  yarn \
+  nautilus  \
+  playerctl \
+  xdg-user-dirs \
+  kdeconnect \
+  ueberzug \
+  yt-dlp \
+  blueman \
+  sshfs \
+  vlc \
+  htop \
+  gedit \
+  maim \
+  libreoffice \
+  cowfortune \
+  zsh \
+  lsd \
+  bpytop \
+  lynx \
+  zathura \
+  unzip \
+  npm \
+  zathura-djvu \
+  zathura-ps \
+  zathura-pdf-mupdf \
+  xsel \
+  tree \
+  dmenu \
+  sxiv \
+  ffmpeg \
+  clipmenu \
+  krusader \
+  zip \
+  ansible \
+  catdoc \
+  docx2txt \
+  ttf-dejavu \
+  conky \
+  lazygit \
+  python-beautifulsoup4\
+  python-requests \
+  python-selenium \
+  geckodriver
+
+pip install dbus-python 
+pip install pynvim

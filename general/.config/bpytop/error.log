@@ -1,0 +1,39 @@
+25/12/21 (19:40:10) | ERROR: Input thread failed with exception: [Errno 5] Input/output error
+Traceback (most recent call last):
+  File "/sbin/bpytop", line 937, in _get_key
+    input_key += sys.stdin.read(1)						#* Read 1 key safely with blocking on
+OSError: [Errno 5] Input/output error
+25/12/21 (19:40:48) | ERROR: Data collection thread failed with exception: Sign not allowed in string format specifier
+Traceback (most recent call last):
+  File "/sbin/bpytop", line 2939, in _runner
+    collector._draw()
+  File "/sbin/bpytop", line 3971, in _draw
+    ProcBox._draw_fg()
+  File "/sbin/bpytop", line 2719, in _draw_fg
+    label = (f'{THEME.title}{Fx.b}{Mv.to(y, x)}{"Pid:":>7} {"Program:" if prog_len > 8 else "Prg:":<{prog_len}}' + (f'{"Arguments:":<{arg_len-4}}' if arg_len else "") +
+ValueError: Sign not allowed in string format specifier
+25/12/21 (19:40:48) | WARNING: Exiting with errorcode (1). Runtime 0:00:00 
+
+25/12/21 (19:44:08) | ERROR: Data collection thread failed with exception: Sign not allowed in string format specifier
+Traceback (most recent call last):
+  File "/sbin/bpytop", line 2939, in _runner
+    collector._draw()
+  File "/sbin/bpytop", line 3971, in _draw
+    ProcBox._draw_fg()
+  File "/sbin/bpytop", line 2719, in _draw_fg
+    label = (f'{THEME.title}{Fx.b}{Mv.to(y, x)}{"Pid:":>7} {"Program:" if prog_len > 8 else "Prg:":<{prog_len}}' + (f'{"Arguments:":<{arg_len-4}}' if arg_len else "") +
+ValueError: Sign not allowed in string format specifier
+25/12/21 (19:44:08) | WARNING: Exiting with errorcode (1). Runtime 0:00:00 
+
+25/12/21 (20:00:25) | WARNING: The menu system only works on a terminal size of 80x24 or above!
+25/12/21 (20:00:25) | WARNING: The menu system only works on a terminal size of 80x24 or above!
+25/12/21 (20:00:27) | WARNING: The menu system only works on a terminal size of 80x24 or above!
+25/12/21 (20:00:27) | WARNING: The menu system only works on a terminal size of 80x24 or above!
+25/12/21 (20:00:27) | WARNING: The menu system only works on a terminal size of 80x24 or above!
+25/12/21 (20:00:28) | WARNING: The menu system only works on a terminal size of 80x24 or above!
+25/12/21 (20:02:10) | WARNING: The menu system only works on a terminal size of 80x24 or above!
+25/12/21 (20:02:10) | WARNING: The menu system only works on a terminal size of 80x24 or above!
+25/12/21 (20:02:11) | WARNING: The menu system only works on a terminal size of 80x24 or above!
+25/12/21 (20:02:12) | WARNING: The menu system only works on a terminal size of 80x24 or above!
+25/12/21 (20:02:13) | WARNING: The menu system only works on a terminal size of 80x24 or above!
+25/12/21 (20:02:14) | WARNING: The menu system only works on a terminal size of 80x24 or above!

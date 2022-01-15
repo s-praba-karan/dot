@@ -1,0 +1,6 @@
+#!/bin/bash
+
+systemctl mask systemd-backlight@leds\:dell\:\:kbd_backlight.service
+export QT_QPA_PLATFORMTHEME="qt5ct"
+
+

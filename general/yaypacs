@@ -1,0 +1,25 @@
+#!/bin/bash
+
+ys i3lock-color \
+  pulseaudio-ctl \
+  ytfzf \
+  whatsdesk \
+  ani-cli-git \
+  qt5ct \
+  papirus-folders-nordic \
+  ttf-iosevka \
+  lf \
+  webtorrent-cli \
+  lxml \
+  ananicy \
+  nohang \
+  epub-thumbnailer-git \
+  ttf-fira-code \
+  mono-complete \
+  notify-send-py 
+
+sudo systemctl enable ananicy
+sudo systemctl start ananicy
+sudo systemctl enable --now nohang-desktop.service
+
+nohang --memload
