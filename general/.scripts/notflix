@@ -4,7 +4,7 @@
 
 mkdir -p $HOME/.cache/notflix
 
-menu="rofi -dmenu -i -markup-rows -no-show-icons -width 2000 -lines 15 -yoffset 40 vtheme "
+menu="rofi -dmenu -i -l 10"
 baseurl="https://1337x.wtf"
 cachedir="$HOME/.cache/notflix"
 

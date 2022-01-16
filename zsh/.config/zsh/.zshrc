@@ -73,7 +73,7 @@ alias cls='clear'
 alias ls='lsd'
 alias '?'='duck'
 alias '??'='google'
-alias 'lf'='lf-ueberzug'
+alias 'lf'='~/.scripts/lf-ueberzug'
 alias 'todo'='v ~/.config/conky/todo/todo.md'
 
 #Plugins

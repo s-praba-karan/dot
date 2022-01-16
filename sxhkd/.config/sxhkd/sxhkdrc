@@ -12,8 +12,7 @@ super + Escape
 ###########
 
 # quit/restart bspwm
-super + alt + {q,r}
-	bspc {quit,wm -r}
+super + alt + {q,r} bspc {quit,wm -r}
 
 # alternate between the tiled and monocle layout
 super + m
@@ -143,7 +142,7 @@ super + Return
 	
 # Open Terminal in floating mode
 super + shift + Return
-  bspc rule -a Alacritty -o state=floating follow=on center=true rectangle=800x600+0+0 && alacritty
+  bspc rule -a kitty -o state=floating follow=on center=true rectangle=600x400+0+0 && kitty
   
 # Rofi
 super + d
@@ -178,6 +177,8 @@ shift +  alt + w
 control + alt + h 
       exec ~/.scripts/sxhkd-help
 
+control + alt + m
+      exec notflix &
 
 ############
 #SCRATCHPAD#
@@ -188,3 +189,6 @@ alt + w
 
 alt + z
   ~/.scripts/bspwm-toggle-visibility Zathura --take-first
+
+alt + k
+  ~/.scripts/bspwm-toggle-visibility kitty --take-first
