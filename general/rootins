@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pacman -S bspwm \
+sudo pacman -S bspwm \
   dunst \
   sxhkd \
   rofi \
@@ -16,7 +16,7 @@ pacman -S bspwm \
   ttf-sarasa-gothic \
   libnotify \
   yarn \
-  nautilus  \
+  neovim \
   playerctl \
   xdg-user-dirs \
   kdeconnect \
@@ -25,14 +25,12 @@ pacman -S bspwm \
   blueman \
   sshfs \
   vlc \
-  htop \
   gedit \
   maim \
   libreoffice \
   cowfortune \
   zsh \
   lsd \
-  bpytop \
   lynx \
   zathura \
   unzip \

@@ -1,6 +1,7 @@
 #!/bin/bash
 
-ys i3lock-color \
+yay -S i3lock-color \
+  polybar \
   pulseaudio-ctl \
   ytfzf \
   whatsdesk \
@@ -10,16 +11,11 @@ ys i3lock-color \
   ttf-iosevka \
   lf \
   webtorrent-cli \
-  lxml \
+  python-lxml \
+  ly \
   ananicy \
   nohang \
   epub-thumbnailer-git \
   ttf-fira-code \
-  mono-complete \
-  notify-send-py 
-
-sudo systemctl enable ananicy
-sudo systemctl start ananicy
-sudo systemctl enable --now nohang-desktop.service
-
-nohang --memload
+  mono \
+  notify-send-py
