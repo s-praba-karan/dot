@@ -3,15 +3,19 @@
 sudo pacman -S bspwm \
   dunst \
   sxhkd \
+  lxappearance \
   rofi \
   alacritty \
   kitty \
   neofetch \
+  kvantum \
   feh \
   stow \
   okular \
   xdo \
   xorg-xinit \
+  picom \
+  firefox \
   xorg python-pip \
   ttf-sarasa-gothic \
   libnotify \

@@ -11,6 +11,7 @@ yay -S i3lock-color \
   ttf-iosevka \
   lf \
   webtorrent-cli \
+  nordic-darker-theme \
   python-lxml \
   ly \
   ananicy \

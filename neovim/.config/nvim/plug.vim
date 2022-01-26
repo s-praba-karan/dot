@@ -19,6 +19,7 @@ Plug 'folke/which-key.nvim'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'ap/vim-css-color'
+Plug 'shime/vim-livedown'
 
 "cmp plugins
 Plug 'hrsh7th/nvim-cmp'

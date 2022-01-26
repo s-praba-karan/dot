@@ -37,3 +37,20 @@ ValueError: Sign not allowed in string format specifier
 25/12/21 (20:02:12) | WARNING: The menu system only works on a terminal size of 80x24 or above!
 25/12/21 (20:02:13) | WARNING: The menu system only works on a terminal size of 80x24 or above!
 25/12/21 (20:02:14) | WARNING: The menu system only works on a terminal size of 80x24 or above!
+23/01/22 (19:41:30) | ERROR: [Errno 2] No such file or directory: '/home/prabakaran/.config/bpytop/themes'
+Traceback (most recent call last):
+  File "/sbin/bpytop", line 1357, in refresh
+    for f in os.listdir(d):
+FileNotFoundError: [Errno 2] No such file or directory: '/home/prabakaran/.config/bpytop/themes'
+25/01/22 (20:35:46) | ERROR: [Errno 2] No such file or directory: '/home/prabakaran/.config/bpytop/themes'
+Traceback (most recent call last):
+  File "/sbin/bpytop", line 1357, in refresh
+    for f in os.listdir(d):
+FileNotFoundError: [Errno 2] No such file or directory: '/home/prabakaran/.config/bpytop/themes'
+25/01/22 (20:36:04) | ERROR: Input thread failed with exception: (5, 'Input/output error')
+Traceback (most recent call last):
+  File "/sbin/bpytop", line 954, in _get_key
+    with Raw(sys.stdin):
+  File "/sbin/bpytop", line 798, in __exit__
+    termios.tcsetattr(self.stream, termios.TCSANOW, self.original_stty)
+termios.error: (5, 'Input/output error')

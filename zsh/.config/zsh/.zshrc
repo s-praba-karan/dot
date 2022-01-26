@@ -18,6 +18,7 @@ export MANPAGER='nvim +Man!'
 PATH=$PATH:$HOME/.scripts #making my scripts run without typing the whole path
 PATH=$PATH:$HOME/.scripts/anipy-cli
 export QT_QPA_PLATFORMTHEME="qt5ct"
+export PATH="$HOME/.local/share/gem/ruby/3.0.0/bin:$PATH"
 
 bindkey -v # vi-mode
 autoload -Uz compinit && compinit #need the next two lines for case insensitive tab completion
@@ -70,16 +71,19 @@ alias 'ta'='tmux a -t'
 alias 'tk'='tmux kill-ses -t'
 alias 'wc'='feh --randomize --bg-scale ~/.wallpapers/*'
 
-alias kill='killall -q'
-alias cls='clear'
-alias ls='lsd'
+# git
+alias 'gc'='git clone'
+
+alias 'kill'='killall -q'
+alias 'cls'='clear'
+alias 'ls'='lsd'
+alias 'tree'='lsd --tree'
 alias '?'='duck'
 alias '??'='google'
 alias 'lf'='~/.scripts/lf-ueberzug'
 alias 'todo'='v ~/.config/conky/todo/todo.md'
 
-#Plugins
-
+# Plugins
 source ~/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.config/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
@@ -96,4 +100,5 @@ AUTO_NOTIFY_IGNORE+=("lf" "hugo serve" "tmux" "t"  "ytc" "ytt" "yth" "yta" "an" 
 
 ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
+# fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
