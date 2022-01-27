@@ -58,7 +58,6 @@ sudo pacman -S bspwm \
   lazygit \
   python-beautifulsoup4\
   python-requests \
-  python-selenium \
   geckodriver
 
 pip install dbus-python 
