@@ -58,7 +58,8 @@ sudo pacman -S bspwm \
   lazygit \
   python-beautifulsoup4\
   python-requests \
-  geckodriver
+  geckodriver \
+  newsboat
 
 pip install dbus-python 
 pip install pynvim

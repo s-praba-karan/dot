@@ -33,5 +33,4 @@ setxkbmap -layout us,'us(dvorak)' -option grp:toggle &
 conky -c ~/.config/conky/todo/todo.conf
 
 # MPD
-~/.local/scripts/mpd_start &
-
+~/.scripts/mpd_start &

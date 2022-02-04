@@ -14,18 +14,19 @@ export TERMINAL='alacritty'
 export BROWSER='firefox'
 export MANPAGER='nvim +Man!'
 
+# Prompt Settings
+PROMPT='%F{yellow}%1~%f %F{green}∯%f  '
+
 # Basic zsh settings
 PATH=$PATH:$HOME/.scripts #making my scripts run without typing the whole path
 PATH=$PATH:$HOME/.scripts/anipy-cli
+PATH=$PATH:$HOME/.rbenv/versions/2.7.3/bin/
 export QT_QPA_PLATFORMTHEME="qt5ct"
 export PATH="$HOME/.local/share/gem/ruby/3.0.0/bin:$PATH"
 
 bindkey -v # vi-mode
 autoload -Uz compinit && compinit #need the next two lines for case insensitive tab completion
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}'
-
-# Prompt Settings
-PROMPT='%F{yellow}%1~%f %F{green}∯%f  '
 
 ## Git Settings
 autoload -Uz vcs_info
@@ -74,6 +75,7 @@ alias 'wc'='feh --randomize --bg-scale ~/.wallpapers/*'
 # git
 alias 'gc'='git clone'
 
+alias 'tsm'='transmission-remote'
 alias 'kill'='killall -q'
 alias 'cls'='clear'
 alias 'ls'='lsd'
@@ -82,7 +84,7 @@ alias '?'='duck'
 alias '??'='google'
 alias 'lf'='~/.scripts/lf-ueberzug'
 alias 'todo'='v ~/.config/conky/todo/todo.md'
-
+alias 'nb'='newsboat'
 # Plugins
 source ~/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
