@@ -25,3 +25,4 @@ A compilation of my fav dots with slight modification
 ## Credits
 - [b4skyx](https://github.com/b4skyx) 90% of my setup is made up of his config
 - [john-ghd](https://github.com/john-ghd) rofi theme stolen from his setup
+- [makcrr](https://github.com/makccr) wallpapers taken from his collection
