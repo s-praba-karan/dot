@@ -3,6 +3,8 @@ A compilation of my fav dots with slight modification
 
 ## Screenshots
 ![image](https://media.discordapp.net/attachments/905376517507412028/939195535137599538/Screenshot_040222_214545.png?width=834&height=469)
+![image](https://media.discordapp.net/attachments/905376517507412028/939195607564824616/Screenshot_040222_214632.png?width=503&height=283)
+![image](https://media.discordapp.net/attachments/905376517507412028/939195607841656862/Screenshot_040222_215252.png?width=503&height=283)
 ----
 
 •                       | • 
