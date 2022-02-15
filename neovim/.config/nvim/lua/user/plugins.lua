@@ -8,7 +8,7 @@ if fn.empty(fn.glob(install_path)) > 0 then
     "clone",
     "--depth",
     "1",
-    "https://github.com/wbthomason/packer.nvim",
+  "https://github.com/wbthomason/packer.nvim",
     install_path,
   }
   print "Installing packer close and reopen Neovim..."
@@ -68,7 +68,9 @@ return packer.startup(function(use)
   use "ellisonleao/gruvbox.nvim"
   use "arzg/vim-substrata"
   use "cocopon/iceberg.vim"
-  
+  use "sjl/badwolf" 
+  use "aonemd/kuroi.vim"
+
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions

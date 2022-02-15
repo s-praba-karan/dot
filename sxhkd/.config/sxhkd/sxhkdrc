@@ -143,7 +143,7 @@ super + Return
 	
 # Open Terminal in floating mode
 super + shift + Return
-  bspc rule -a kitty -o state=floating follow=on center=true rectangle=600x400+0+0 && kitty
+  kitty
   
 # Rofi
 super + d
@@ -178,9 +178,6 @@ shift +  alt + w
 control + alt + h 
       exec ~/.scripts/sxhkd-help
 
-control + alt + m
-      exec notflix &
-
 ############
 #SCRATCHPAD#
 ############
@@ -192,4 +189,7 @@ alt + z
   ~/.scripts/bspwm-toggle-visibility Zathura --take-first
 
 alt + k
-  ~/.scripts/bspwm-toggle-visibility kitty --take-first
+  tdrop -am -w 1362 -y 0 kitty
+
+alt + m 
+      ~/.scripts/tdrop_c -n 2 -p 'bspc rule -a kitty -o state=floating' kitty -e ncmpcpp

@@ -1,13 +1,3 @@
-/*
- *
- * Author  : Aditya Shakya
- * Mail    : adi1090x@gmail.com
- * Github  : @adi1090x
- * Twitter : @adi1090x
- *
- */
-
-
 configuration {
 	font:							      "Liga SFMono Nerd Font 11";
   show-icons:             false;
@@ -24,26 +14,26 @@ window
     font: "mono 10";
     width: 35%;
     border: 9px;
-    border-color: #272e32;
+    border-color: #1b1918;
 }
 
 mainbox
 {
-    background-color: #2e313d;
+    background-color: #1b1918;
     spacing: 8px;
 }
 
 inputbar
 {
     spacing: 0;
-    background-color: #2e313d;
+    background-color: #1b1918;
 }
 
 prompt
 {
     padding: 2px 8px;
     color: #000000;
-    background-color: #bdae93;
+    background-color: #a1a16d;
 }
 
 entry
@@ -60,7 +50,7 @@ case-indicator
 
 listview
 {
-    background-color: #272e32;
+    background-color: #1b1918;
     spacing: 5px;
     lines: 10;
     cycle: false;
@@ -75,7 +65,7 @@ element
 element.selected
 {
     color: #000000;
-    background-color: #bdae93;
+    background-color: #a1a16d;
 }
 
 element-text
@@ -88,7 +78,7 @@ element-text
 element-text.selected
 {
     color: #000000;
-    background-color: #bdae93;
+    background-color: #a1a16d;
 }
 
 error-message, textbox

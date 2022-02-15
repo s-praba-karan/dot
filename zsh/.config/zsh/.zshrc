@@ -17,13 +17,14 @@ export MANPAGER='nvim +Man!'
 # Prompt Settings
 PROMPT='%F{yellow}%1~%f %F{green}∯%f  '
 
-# Basic zsh settings
+#PATH Settings
 PATH=$PATH:$HOME/.scripts #making my scripts run without typing the whole path
 PATH=$PATH:$HOME/.scripts/anipy-cli
 PATH=$PATH:$HOME/.rbenv/versions/2.7.3/bin/
-export QT_QPA_PLATFORMTHEME="qt5ct"
-export PATH="$HOME/.local/share/gem/ruby/3.0.0/bin:$PATH"
+LYNX_CFG="$HOME/.config/lynx/lynx.cfg"
+LYNX_LSS="$HOME/.config/lynx/lynx.lss"
 
+# Basic zsh settings
 bindkey -v # vi-mode
 autoload -Uz compinit && compinit #need the next two lines for case insensitive tab completion
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}'
@@ -79,6 +80,7 @@ alias 'tsm'='transmission-remote'
 alias 'kill'='killall -q'
 alias 'cls'='clear'
 alias 'ls'='lsd'
+alias 'lsa'='lsd -al'
 alias 'tree'='lsd --tree'
 alias '?'='duck'
 alias '??'='google'

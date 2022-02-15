@@ -1,9 +1,11 @@
 # My todo list
 
-## Physics classwork
+## Chemistry Record
 [.] write cw
 
-## CS classwork
+## Physics Record
 [ ] will leave this for you to figure out
 
+## Math Record
+[ ]
 

@@ -11,7 +11,7 @@ type maim &>/dev/null || {
 }
 
 # Fallback to dmenu if rofi is not found
-dmenu_cmd="rofi -dmenu -i -markup-rows -no-show-icons -width 1000 -lines 15 -yoffset 40 -theme ~/.config/rofi/config.rasi"
+dmenu_cmd="rofi -dmenu -no-show-icons -width 20em -theme ~/.config/rofi/config.rasi "
 
 type rofi&>/dev/null || {
 	type dmenu&>/dev/null || {
