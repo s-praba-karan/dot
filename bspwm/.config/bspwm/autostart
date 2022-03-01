@@ -10,6 +10,7 @@ pkill -f polybar
 pkill kdeconnect-indicator
 pkill -f WhatsDesk
 pkill -f WhatsDesk
+pkill conky
 
 # Polybar
 ~/.config/polybar/launch.sh &

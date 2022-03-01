@@ -76,6 +76,7 @@ alias 'wc'='feh --randomize --bg-scale ~/.wallpapers/*'
 # git
 alias 'gc'='git clone'
 
+alias 'sudo'='sudo '
 alias 'tsm'='transmission-remote'
 alias 'kill'='killall -q'
 alias 'cls'='clear'
@@ -87,6 +88,9 @@ alias '??'='google'
 alias 'lf'='~/.scripts/lf-ueberzug'
 alias 'todo'='v ~/.config/conky/todo/todo.md'
 alias 'nb'='newsboat'
+alias 'music'='ncmpcpp'
+alias 'z'='zathura'
+
 # Plugins
 source ~/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -100,7 +104,7 @@ bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
 # auto notify options
-AUTO_NOTIFY_IGNORE+=("lf" "hugo serve" "tmux" "t"  "ytc" "ytt" "yth" "yta" "an" "anh" "anc" "zathura")
+AUTO_NOTIFY_IGNORE+=("lf" "nb" "todo" "newsboat" "music" "z" "hugo serve" "tmux" "t"  "ytc" "ytt" "yth" "yta" "an" "anh" "anc" "zathura")
 
 ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 

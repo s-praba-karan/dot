@@ -174,5 +174,12 @@
 [urgency_critical]
     background = "#1b1918"
     foreground = "#f22c40"
-    timeout = 0
+    timeout = 10
 
+[spotify]
+    history_ignore = yes
+    appname = Spotify
+    format = "<b><span foreground='#A3BE8C'></span> %a</b>\n%s"
+    max_icon_size = 128
+    timeout = 10
+	  frame_color="#A3BE8C"
