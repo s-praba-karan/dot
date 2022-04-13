@@ -1,4 +1,4 @@
-#!/bin/sh -e
+#!/usr/bin/env sh -e
 #
 # https://rgz.ee/bin/ssg6
 # Copyright 2018-2019 Roman Zolotarev <hi@romanzolotarev.com>

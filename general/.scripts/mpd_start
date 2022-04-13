@@ -1,4 +1,4 @@
-# !/bin/bash
+#!/usr/bin/env bash
 
 # Start mpd+mpris daemons
 

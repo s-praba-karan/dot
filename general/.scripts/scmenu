@@ -1,6 +1,5 @@
-#!/bin/bash
-# https://github.com/b4skyx/scmenu
-# Check whether the dependencies have been installed or not
+#!/usr/bin/env bash
+
 type curl &>/dev/null || {
 	echo "Couldn't find curl, dependency not satisfied." >&2
 	exit 17

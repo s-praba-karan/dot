@@ -1,18 +1,9 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-# File: lock.sh
-# Author: Abhishek Yadav
-# Upstream: https://github.com/b4skyx/unix-scripts
+CLOCK_FONT="JetBrainsMono Nerd Font"
+FONT="JetBrainsMono Nerd Font"
 
-# Pretty lockscreen implementation using i3lock-color
-# Bind this script to a keybind or run using xautolock to execute it on idle/sleep.
-
-# Note: Works only with the i3lock latest version. They changed some flags which broke backwards compatibility.
-
-CLOCK_FONT="Sarasa UI HC"
-FONT="Sarasa Mono K"
-
-quote="$(shuf -n 1 ~/.quotes)"
+quote="$(shuf -n 1 ~/.scripts/lock_quotes)"
 status=$(playerctl status || true)
 music_paused_on_lock=false
 
@@ -26,7 +17,7 @@ lock() {
                 --time-str="%I:%M %p" --time-pos="w/2:h/2-70" \
                 --time-color=bfddb2 --timeoutline-color=868686  --time-font="$CLOCK_FONT:style=Italic" --time-size=64 \
                 --date-pos="tx:ty+42"\
-                --date-color=b3cfa7 --date-font="$FONT:style=Bold" --date-size=24 \
+                --date-color=b3cfa7 --date-str="%A, %d %b %Y" --date-font="$FONT:style=Bold" --date-size=24 \
                 --greeter-text="\"$quote\"" \
                 --greeter-pos="w/2:h/2+18"\
                 --greeter-color=d39bb6 --greeter-font="$FONT" --greeter-size=24 \

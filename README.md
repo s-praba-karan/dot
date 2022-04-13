@@ -2,9 +2,9 @@
 A compilation of my fav dots with slight modification
 
 ## Screenshots
-![image1](https://cdn.discordapp.com/attachments/905376517507412028/939195535137599538/Screenshot_040222_214545.png)
-![image2](https://cdn.discordapp.com/attachments/905376517507412028/939195607564824616/Screenshot_040222_214632.png)
-![image3](https://cdn.discordapp.com/attachments/905376517507412028/939195607841656862/Screenshot_040222_215252.png)
+![image1](https://media.discordapp.net/attachments/905376517507412028/952584677519151244/Screenshot_130322_195923.png?width=503&height=283)
+![image3](https://media.discordapp.net/attachments/905376517507412028/952584678408343582/Screenshot_130322_203701.png?width=503&height=283)
+![image2](https://media.discordapp.net/attachments/905376517507412028/952584678085374002/Screenshot_130322_202843.png?width=503&height=283)
 
 ----
 

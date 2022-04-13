@@ -163,6 +163,9 @@ alt + v
 shift + alt + b
       firefox
 
+shift + alt + e
+      emacsclient -c -a 'emacs'
+
 shift + alt + f
       krusader
       
@@ -181,6 +184,8 @@ control + alt + h
 ############
 #SCRATCHPAD#
 ############
+alt + b
+  ~/.scripts/tdrop_b -n 3 -p 'bspc rule -a kitty -o state=floating' kitty -e btop
 
 alt + w
   ~/.scripts/bspwm-toggle-visibility whatsdesk --take-first
@@ -192,4 +197,15 @@ alt + k
   tdrop -am -w 1362 -y 0 kitty
 
 alt + m 
-      ~/.scripts/tdrop_c -n 2 -p 'bspc rule -a kitty -o state=floating' kitty -e ncmpcpp
+  ~/.scripts/tdrop_c -n 2 -p 'bspc rule -a kitty -o state=floating' kitty -e ncmpcpp
+
+#######
+#MOUSE#
+#######
+
+button9
+    bsp-layout cycle --layouts tall,wide,tiled
+
+button8
+    bsp-layout cycle --layouts tiled,wide,tall
+  

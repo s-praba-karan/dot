@@ -5,6 +5,10 @@ export TERM="xterm-256color"
 HISTSIZE=5000               #How many lines of history to keep in memory
 HISTFILE=~/.config/zsh/.zsh_history     #Where to save history to disk
 SAVEHIST=5000               #Number of history entries to save to disk
+export NVM_LAZY_LOAD=true
+export NVM_COMPLETION=true
+plugins=(zsh-nvm git npm)
+
 setopt    appendhistory     #Append history to the history file (no overwriting)
 setopt    sharehistory      #Share history across terminals
 setopt    incappendhistory
@@ -19,10 +23,10 @@ PROMPT='%F{yellow}%1~%f %F{green}∯%f  '
 
 #PATH Settings
 PATH=$PATH:$HOME/.scripts #making my scripts run without typing the whole path
-PATH=$PATH:$HOME/.scripts/anipy-cli
 PATH=$PATH:$HOME/.rbenv/versions/2.7.3/bin/
-LYNX_CFG="$HOME/.config/lynx/lynx.cfg"
-LYNX_LSS="$HOME/.config/lynx/lynx.lss"
+PATH=$PATH:$HOME/.emacs.d/bin/
+LYNX_CFG=$HOME/.config/lynx/lynx.cfg
+LYNX_LSS=$HOME/.config/lynx/lynx.lss
 
 # Basic zsh settings
 bindkey -v # vi-mode
@@ -44,15 +48,15 @@ zstyle ':vcs_info:*' enable git
 
 ## App launchers
 alias pvpn='protonvpn-cli'
-alias v='nvim'
+alias v='nvim -i NONE'
 alias f='ranger'
 
 # Pacman and Yay
 alias pac='sudo pacman'
-alias pacs='sudo pacman -S'
+alias pacs='sudo pacman -Sy'
 alias pacr='sudo pacman -R'
-alias up='sudo pacman -Syyyu && yay -Syyyu'
-alias ys='yay -S'
+alias up='sudo pacman -Syyyu; yay -Syyyu'
+alias ys='yay -Sy'
 alias yr='yay -R'
 
 # ytfzf and ani-cli
@@ -60,9 +64,7 @@ alias ytt='ytfzf -t'
 alias yta='ytfzf -t -m'
 alias yth='ytfzf -H'
 alias ytc='ytfzf -x'
-alias an='python ~/.scripts/anipy-cli/main.py'
-alias anh='python ~/.scripts/anipy-cli/main.py -H'
-alias anc='python ~/.scripts/anipy-cli/main.py -D'
+alias ln='lightnovel-cli'
 
 # tmux
 alias 'tmux'='tmux -u'
@@ -75,6 +77,11 @@ alias 'wc'='feh --randomize --bg-scale ~/.wallpapers/*'
 
 # git
 alias 'gc'='git clone'
+
+# rsync
+alias 'rsw'='rsync -vrP --delete-after ~/Desktop/git-repos/website/_site/ root@s-prabakaran.com:/var/www/prabakaran'
+alias 'rsg'='rsync -vrP --delete-after ~/Desktop/git-repos/gopher-site/gophermap root@s-prabakaran.com:/var/gopher/'
+
 
 alias 'sudo'='sudo '
 alias 'tsm'='transmission-remote'
@@ -90,6 +97,7 @@ alias 'todo'='v ~/.config/conky/todo/todo.md'
 alias 'nb'='newsboat'
 alias 'music'='ncmpcpp'
 alias 'z'='zathura'
+alias 'open'='xdg-open'
 
 # Plugins
 source ~/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -97,16 +105,18 @@ source ~/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.config/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 source ~/.config/zsh/plugins/zsh-auto-notify/auto-notify.plugin.zsh
 source ~/.config/zsh/plugins/zsh-you-should-use/you-should-use.plugin.zsh
-
+source ~/.config/zsh/plugins/zsh-nvm/zsh-nvm.plugin.zsh
 
 # history substring search options
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
 # auto notify options
-AUTO_NOTIFY_IGNORE+=("lf" "nb" "todo" "newsboat" "music" "z" "hugo serve" "tmux" "t"  "ytc" "ytt" "yth" "yta" "an" "anh" "anc" "zathura")
+AUTO_NOTIFY_IGNORE+=("lf-ueberzug" "ln" "nb" "todo" "newsboat" "music" "z" "lf" "tmux" "t"  "ytc" "ytt" "yth" "yta" "an" "anh" "anc" "zathura")
 
 ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# source /usr/share/nvm/init-nvm.sh

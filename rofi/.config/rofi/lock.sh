@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # File: lock.sh
 # Author: Abhishek Yadav

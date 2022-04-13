@@ -91,3 +91,4 @@ map C clear
 map gd cd ~/Documents
 map gD cd ~/Downloads
 map gc cd ~/.config
+map gP cd ~/Desktop/git-repos/

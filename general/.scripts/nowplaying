@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 fname=`ncmpcpp --quiet --current-song "%f"`
 file=`find ~/Music -name "$fname"`
