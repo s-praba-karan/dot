@@ -1,27 +1,24 @@
 #!/usr/bin/env bash
 
 # Wallpaper
-~/.scripts/wp & 
+feh --bg-scale ~/.wallpapers/evening-sky.png &
 
 # Kill Applications
-pkill -f firefox
 pkill -f kdeconnectd
 pkill -f polybar
 pkill kdeconnect-indicator
 pkill -f WhatsDesk
-pkill -f WhatsDesk
 pkill conky
 pkill emacs
+pkill spotify
 
 # Polybar
 ~/.config/polybar/launch.sh &
 
 # Applications
-blueman-applet &                 #Bluetooth Manager Applet
 whatsdesk &
 clipmenud &                      #Clipmenu Daemon
 /usr/lib/kdeconnectd &           #KDE Connect 
-kdeconnect-indicator &           #KDE Connect Applet
 emacs --daemon &                 #Emacs Daemon
 
 # Keyboard Layout
@@ -32,5 +29,3 @@ pgrep conky || conky &
 
 # MPD
 ~/.scripts/mpd_start &
-
-xautolock -detectsleep -time 5 -locker ~/.scripts/lock.sh -notify 30 -notifier "notify-send -u critical -t 10000 -- 'LOCKING screen in 30 seconds'" &

@@ -38,7 +38,7 @@ super + shift + r
 
 # Rotate tree
 super + shift + {d,a}
-    bspc node @/ -C {forward,backward}
+  bspc node @/ -C {forward,backward}
 
 # move a floating window
 super + {Left,Down,Up,Right}
@@ -46,9 +46,9 @@ super + {Left,Down,Up,Right}
 
 # Expand/contract a window by moving one of its side outward/inward
 alt + shift + {h,j,k,l}
-    STEP=20; SELECTION={1,2,3,4}; \
-    bspc node -z $(echo "left -$STEP 0,bottom 0 $STEP,top 0 -$STEP,right $STEP 0" | cut -d',' -f$SELECTION) || \
-    bspc node -z $(echo "right -$STEP 0,top 0 $STEP,bottom 0 -$STEP,left $STEP 0" | cut -d',' -f$SELECTION)
+  STEP=20; SELECTION={1,2,3,4}; \
+  bspc node -z $(echo "left -$STEP 0,bottom 0 $STEP,top 0 -$STEP,right $STEP 0" | cut -d',' -f$SELECTION) || \
+  bspc node -z $(echo "right -$STEP 0,top 0 $STEP,bottom 0 -$STEP,left $STEP 0" | cut -d',' -f$SELECTION)
 
 # swap the current node and the biggest node
 super + g
@@ -111,17 +111,17 @@ super + ctrl + space
 
 #Volume Control
 XF86AudioLowerVolume
-	/usr/bin/pulseaudio-ctl down
+	/usr/bin/pamixer -d 5
 XF86AudioRaiseVolume
-	/usr/bin/pulseaudio-ctl up
+	/usr/bin/pamixer -i 5
 XF86AudioMute
-	/usr/bin/pulseaudio-ctl mute
+	/usr/bin/pamixer -t
 
 ## Music Controls
 XF86AudioNext
   playerctl next
 XF86AudioPrev
-  playerctl prev
+  playerctl previous
 XF86AudioPlay
   playerctl play-pause
 
@@ -144,42 +144,43 @@ super + Return
 # Open Terminal in floating mode
 super + shift + Return
   kitty
-  
+
+#Spotify
+super + s
+  ~/.scripts/start_spotify
+
 # Rofi
 super + d
-	~/.config/rofi/launcher.sh
+  ~/.config/rofi/launcher.sh
 
 # Screenshot
 control + shift + p
-      ~/.scripts/scmenu
+  ~/.scripts/scmenu
 # General app shortcuts
 super + shift + p
-      ~/.scripts/powermenu.sh
+  ~/.scripts/powermenu.sh
 
 # Show clipmenu
 alt + v
-    CM_LAUNCHER=rofi clipmenu -no-show-icons -theme "~/.config/rofi/config.rasi"  -theme-str '* \{ font: 10px; \}' -theme-str 'window \{ width: 20em; \}' -no-show-icons
+  CM_LAUNCHER=rofi clipmenu -no-show-icons -theme "~/.config/rofi/config.rasi"  -theme-str '* \{ font: 10px; \}' -theme-str 'window \{ width: 20em; \}' -no-show-icons
 
 shift + alt + b
-      firefox
+  firefox
 
 shift + alt + e
-      emacsclient -c -a 'emacs'
+  emacsclient -c -a 'emacs'
 
 shift + alt + f
-      krusader
-      
+  krusader
+
 super + shift + f
-      alacritty -e ~/.scripts/lf-ueberzug
+  alacritty -e ~/.scripts/lf-ueberzug
 
 control + shift + Escape
-      alacritty -e ~/.scripts/bpytop
-
-shift +  alt + w
-      whatsdesk 
+  alacritty -e ~/.scripts/bpytop
 
 control + alt + h 
-      exec ~/.scripts/sxhkd-help
+  exec ~/.scripts/sxhkd-help
 
 ############
 #SCRATCHPAD#
@@ -204,8 +205,8 @@ alt + m
 #######
 
 button9
-    bsp-layout cycle --layouts tall,wide,tiled
+  bsp-layout cycle --layouts tall,wide,tiled
 
 button8
-    bsp-layout cycle --layouts tiled,wide,tall
-  
+  bsp-layout cycle --layouts tiled,wide,tall
+ 

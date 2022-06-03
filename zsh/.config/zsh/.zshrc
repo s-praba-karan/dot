@@ -25,6 +25,7 @@ PROMPT='%F{yellow}%1~%f %F{green}∯%f  '
 PATH=$PATH:$HOME/.scripts #making my scripts run without typing the whole path
 PATH=$PATH:$HOME/.rbenv/versions/2.7.3/bin/
 PATH=$PATH:$HOME/.emacs.d/bin/
+PATH=$PATH:$HOME/.local/bin/
 LYNX_CFG=$HOME/.config/lynx/lynx.cfg
 LYNX_LSS=$HOME/.config/lynx/lynx.lss
 
@@ -50,6 +51,7 @@ zstyle ':vcs_info:*' enable git
 alias pvpn='protonvpn-cli'
 alias v='nvim -i NONE'
 alias f='ranger'
+alias spotify='~/.local/share/applications/spotifyy.desktop'
 
 # Pacman and Yay
 alias pac='sudo pacman'
@@ -93,7 +95,7 @@ alias 'tree'='lsd --tree'
 alias '?'='duck'
 alias '??'='google'
 alias 'lf'='~/.scripts/lf-ueberzug'
-alias 'todo'='v ~/.config/conky/todo/todo.md'
+alias 'todo'='v ~/.config/conky/todo.md'
 alias 'nb'='newsboat'
 alias 'music'='ncmpcpp'
 alias 'z'='zathura'
