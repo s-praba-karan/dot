@@ -15,6 +15,10 @@ super + Escape
 super + alt + {q,r} 
   bspc {quit,wm -r}
 
+# fullscreen
+super + f 
+  bspc node -t '~fullscreen'
+
 # alternate between the tiled and monocle layout
 super + m
 	bspc desktop -l next

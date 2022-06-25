@@ -2,21 +2,23 @@
 
 yay -S i3lock-color \
   polybar \
-  pulseaudio-ctl \
+  pipewire \
+  btop \
+  mpdris2 \
+  siji-git \
+  pipewire-pulse \
   ytfzf \
+  tdrop \
   whatsdesk \
-  ani-cli-git \
   qt5ct \
   papirus-folders-nordic \
   ttf-iosevka \
   lf \
   webtorrent-cli \
   nordic-darker-theme \
-  python-lxml \
   ly \
-  ananicy \
-  nohang \
   epub-thumbnailer-git \
   ttf-fira-code \
-  mono \
-  notify-send-py
+  mono 
+
+sudo systemctl enable ly.service

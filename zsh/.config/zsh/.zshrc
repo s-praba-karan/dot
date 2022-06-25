@@ -107,7 +107,6 @@ source ~/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.config/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 source ~/.config/zsh/plugins/zsh-auto-notify/auto-notify.plugin.zsh
 source ~/.config/zsh/plugins/zsh-you-should-use/you-should-use.plugin.zsh
-source ~/.config/zsh/plugins/zsh-nvm/zsh-nvm.plugin.zsh
 
 # history substring search options
 bindkey '^[[A' history-substring-search-up

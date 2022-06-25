@@ -5,9 +5,11 @@ sudo pacman -S bspwm \
   sxhkd \
   lxappearance \
   rofi \
+  pamixer \
   alacritty \
+  mpd \
+  ncmpcpp \
   kitty \
-  neofetch \
   kvantum \
   feh \
   stow \
@@ -31,9 +33,7 @@ sudo pacman -S bspwm \
   vlc \
   gedit \
   maim \
-  libreoffice \
   cowfortune \
-  zsh \
   lsd \
   lynx \
   zathura \
@@ -58,8 +58,8 @@ sudo pacman -S bspwm \
   lazygit \
   python-beautifulsoup4\
   python-requests \
+  archlinux-keyring \
   geckodriver \
-  newsboat
-
-pip install dbus-python 
-pip install pynvim
+  newsboat &&
+  pip install dbus-python && 
+  pip install pynvim
